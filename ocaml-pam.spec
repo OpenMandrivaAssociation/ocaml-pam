@@ -8,6 +8,7 @@ URL:            http://sharvil.nanavati.net/projects/ocamlpam/
 Source0:        http://sharvil.nanavati.net/projects/ocamlpam/files/ocamlpam-%{version}.tar.gz
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}
 BuildRequires:  ocaml
+BuildRequires:  libpam-devel
 
 %description
 OCamlPAM is a wrapper for the Pluggable Authentication Modules (PAM)
