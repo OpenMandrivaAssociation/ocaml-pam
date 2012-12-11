@@ -1,14 +1,13 @@
 Name:           ocaml-pam
 Version:        1.1
-Release:        %mkrel 1
+Release:        2
 Summary:        OCamlPAM is a wrapper for the Pluggable Authentication Modules (PAM) library
 License:        MIT
 Group:          Development/Other
 URL:            http://sharvil.nanavati.net/projects/ocamlpam/
 Source0:        http://sharvil.nanavati.net/projects/ocamlpam/files/ocamlpam-%{version}.tar.gz
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}
 BuildRequires:  ocaml
-BuildRequires:  libpam-devel
+BuildRequires:  pam-devel
 
 %description
 OCamlPAM is a wrapper for the Pluggable Authentication Modules (PAM)
@@ -36,11 +35,7 @@ developing applications that use %{name}.
 make all opt
 
 %install
-rm -rf %{buildroot}
 make install DESTDIR=%{buildroot}%{_libdir}/ocaml/
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
@@ -57,4 +52,13 @@ rm -rf %{buildroot}
 %{_libdir}/ocaml/pam/*.cmxa
 %{_libdir}/ocaml/pam/*.cmx
 %{_libdir}/ocaml/pam/*.mli
+
+
+
+%changelog
+* Thu Aug 13 2009 Florent Monnier <blue_prawn@mandriva.org> 1.1-1mdv2010.0
++ Revision: 416092
+- BuildRequires: libpam-devel
+- BuildRequires: ocaml
+- import ocaml-pam
 
