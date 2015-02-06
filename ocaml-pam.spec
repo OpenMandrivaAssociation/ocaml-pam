@@ -4,7 +4,7 @@
 Summary:	OCamlPAM is a wrapper for the Pluggable Authentication Modules (PAM) library
 Name:		ocaml-pam
 Version:	1.1
-Release:	3
+Release:	4
 License:	MIT
 Group:		Development/Other
 Url:		http://sharvil.nanavati.net/projects/ocamlpam/
