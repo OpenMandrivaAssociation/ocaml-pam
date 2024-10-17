@@ -7,7 +7,7 @@ Version:	1.1
 Release:	4
 License:	MIT
 Group:		Development/Other
-Url:		http://sharvil.nanavati.net/projects/ocamlpam/
+Url:		https://sharvil.nanavati.net/projects/ocamlpam/
 Source0:	http://sharvil.nanavati.net/projects/ocamlpam/files/ocamlpam-%{version}.tar.gz
 BuildRequires:	ocaml
 BuildRequires:	pam-devel
