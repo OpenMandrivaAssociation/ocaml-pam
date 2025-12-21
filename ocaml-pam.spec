@@ -9,6 +9,7 @@ License:	MIT
 Group:		Development/Other
 Url:		https://sharvil.nanavati.net/projects/ocamlpam/
 Source0:	http://sharvil.nanavati.net/projects/ocamlpam/files/ocamlpam-%{version}.tar.gz
+BuildRequires:	make
 BuildRequires:	ocaml
 BuildRequires:	pam-devel
 
